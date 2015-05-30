@@ -1,0 +1,364 @@
+
+<!DOCTYPE HTML>
+<html debug="true" lang="zh_tw">
+<head><!--整個網站的開頭宣告-->
+	<meta charset="utf-8"><!--宣告字集為utf-8code-->
+	<meta name="viewport" content="width=device-width" /><!--定義給手機看-->
+	<title>94iEAt</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"> </script>
+	<script type="text/javascript" src="js/topbar.js"> </script>
+</head>
+
+<body class="body-offcanvas">
+	<!-- NAV -->
+	<header id="menu-one" class="clearfix" style="background-color: #ffc52f;">
+	    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2">
+
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	    </button>
+	    <!--正常電腦畫面時跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade hidden-xs ieat-nav" role="navigation" id="js-bootstrap-offcanvas-3">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#" id="logo">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active" id="login">
+	                	<!-- Button trigger modal -->
+	                	<a href="#" data-toggle="modal" data-target="#Modal-login">我要登入<span class="sr-only">(current)</span></a>
+	                </li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--縮小時候跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade visible-xs" role="navigation" id="js-bootstrap-offcanvas-2">
+	        <div class="container-fluid" >
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active"><a href="#">登入/註冊<span class="sr-only">(current)</span></a></li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	</header>
+
+
+	<!-- Container -->
+	<div class="container ieat-container-adm" style="z-index:1;">
+		<div class="row">
+			<h2>店家管理</h2>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th id="checkbox">
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</th>
+						<th>公休日</th>
+						<th>店家名稱</th>
+						<th>店家資訊</th>
+						<th>新訂單</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- 店家一 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四、周六</span>
+						</td>
+						<td>
+							<span>XXXXxxxxxx店家</span>
+						</td>
+						<td>
+							<span>
+							電話: 065555555<br>
+							地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="order">1筆</span>
+						</td>
+					</tr>
+					<!-- 店家二 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch"/><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+								電話: 065555555<br>
+								地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="">0筆</span>
+						</td>
+					</tr>
+					<!-- 店家三 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+							電話: 065555555<br>
+							地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="order">1筆</span>
+						</td>
+					</tr>
+					<!-- 店家四 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch"/><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+								電話: 065555555<br>
+								地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="">0筆</span>
+						</td>
+					</tr>
+					<!-- 店家五 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch"/><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+								電話: 065555555<br>
+								地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="">0筆</span>
+						</td>
+					</tr>
+					<!-- 店家六 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+							電話: 065555555<br>
+							地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="order">1筆</span>
+						</td>
+					</tr>
+					<!-- 店家七 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+							電話: 065555555<br>
+							地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="order">1筆</span>
+						</td>
+					</tr>
+					<!-- 店家八 -->
+					<tr>
+						<td>
+							<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+						</td>
+						<td>
+							<label>
+		            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div>
+		                <div>
+		                </div>
+		            </div>
+			        </label>
+			        <span>周二、周四</span>
+						</td>
+						<td>
+							<span>XXXX店家</span>
+						</td>
+						<td>
+							<span>
+							電話: 065555555<br>
+							地址: 高雄市xx區xx路xx巷xxx號
+							</span>
+						</td>
+						<td>
+							<span class="order">1筆</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+		<div id="Modal-header">
+		<!-- Modal 登入 -->
+		<div class="modal fade" id="Modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">登入</h3>
+					</div>
+					<div class="modal-body">
+						<button type="button" class="btn btn-primary btn-fb btn-lg btn-block"><i class="icon-facebook-sign"></i>Facebook登入</button>
+						<div id="or"><span>或者</span></div>
+						<form class="">
+							<div class="form-group">
+							   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="輸入信箱">
+							</div>
+							<div class="form-group">
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="密碼">
+							</div>
+							<button type="button" class="btn btn-warning btn-lg btn-block">94iEat會員登入</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-gray" data-toggle="modal" data-target="#Modal-SignUp">註冊為會員</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Modal 登入End -->
+	  <!-- Modal 註冊 -->
+		<div class="modal fade" id="Modal-SignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">註冊</h3>
+					</div>
+					<div class="modal-body">
+						<button type="button" class="btn btn-primary btn-fb btn-lg btn-block"><i class="icon-facebook-sign"></i>Facebook註冊</button>
+						<div id="or"><span>或者</span></div>
+						<form class="">
+							<div class="form-group">
+							   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="輸入信箱">
+							</div>
+							<div class="form-group">
+								<!-- <p class="help-block">提示: 密碼至少輸入8個字元的英文＋數字</p> -->
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="輸入密碼 (至少輸入8個字元的英文＋數字)">
+							</div>
+							<div class="form-group">
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="確認密碼">
+							</div>
+							<button type="button" class="btn btn-warning btn-lg btn-block">94iEat會員註冊</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Modal 註冊End -->
+		</div><!-- Modal-header End -->
+
+</body>

@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+<html debug="true" lang="zh_tw">
+<head><!--整個網站的開頭宣告-->
+	<meta charset="utf-8"><!--宣告字集為utf-8code-->
+	<meta name="viewport" content="width=device-width" /><!--定義給手機看-->
+	<title>94iEAt</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"> </script>
+	<script type="text/javascript" src="js/topbar.js"> </script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).scroll(function() {
+		    var height = $(this).scrollTop();
+		    if(height  > 1) {
+		        $("#menu-one").hide();
+		       	$("#menu-second").css("top", "0px");
+		    }else{
+		    		$("#menu-one").show();
+		    		$("#menu-second").css("top", "50px");
+		    }
+		});
+	});
+	</script>
+</head>
+
+<body class="body-offcanvas">
+	<!-- NAV -->
+	<header id="menu-one" class="clearfix" style="background-color: #ffc52f;">
+	    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2">
+
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	    </button>
+	    <!--正常電腦畫面時跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade hidden-xs ieat-nav" role="navigation" id="js-bootstrap-offcanvas-3">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#" id="logo">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active" id="login">
+	                	<!-- Button trigger modal -->
+	                	<a href="#" data-toggle="modal" data-target="#Modal-login">我要登入<span class="sr-only">(current)</span></a>
+	                </li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--縮小時候跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade visible-xs" role="navigation" id="js-bootstrap-offcanvas-2">
+	        <div class="container-fluid" >
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active"><a href="#">登入/註冊<span class="sr-only">(current)</span></a></li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	</header>
+	<div id="menu-second" class="navbar-heade">
+	  <ul class="nav nav-justified" style="">
+	    <li><a href="#"><i class="icon-globe icon-large"></i>選擇區域</a></li>
+	    <li><a href="#"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>下拉選單</a></li>
+	    <li id="checkout"><a href="#"><i class="icon-shopping-cart icon-large"></i>(9) Checkout</a></li>
+	  </ul>
+	</div>
+	<div id="checkout-app"><a href="#"><i class="icon-shopping-cart icon-large"></i>(9) Checkout</a></div>
+
+
+	<!-- Container -->
+	<div class="container ieat-container" style="z-index:1;">
+		<div class="row">
+			  <div class="col-md-6 dish-block">
+					<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1253_9e6142c7-efc6-457b-a2bc-70c408b6316d.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<a href="" class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+						<span id="acount">0</span>
+						<a href="" class="glyphicon glyphicon-minus" aria-hidden="true"></a>
+					</div>
+			  </div>
+			  <div class="col-md-6 dish-block">
+			  	<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1287_9783188f-5c37-48b0-ab4d-be90fb285452.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<span id="text">可下訂時間: 明天早上10點</span>
+					</div>
+			  </div>
+			  <div class="col-md-6 dish-block">
+					<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1253_9e6142c7-efc6-457b-a2bc-70c408b6316d.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<a href="" class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+						<span id="acount">0</span>
+						<a href="" class="glyphicon glyphicon-minus" aria-hidden="true"></a>
+					</div>
+			  </div>
+			  <div class="col-md-6 dish-block">
+			  	<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1287_9783188f-5c37-48b0-ab4d-be90fb285452.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<a href="" class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+						<span id="acount">0</span>
+						<a href="" class="glyphicon glyphicon-minus" aria-hidden="true"></a>
+					</div>
+			  </div>
+			  <div class="col-md-6 dish-block">
+					<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1253_9e6142c7-efc6-457b-a2bc-70c408b6316d.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<a href="" class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+						<span id="acount">0</span>
+						<a href="" class="glyphicon glyphicon-minus" aria-hidden="true"></a>
+					</div>
+			  </div>
+			  <div class="col-md-6 dish-block">
+			  	<img class="img-responsive" src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1287_9783188f-5c37-48b0-ab4d-be90fb285452.JPG">
+					<h2 id="dish-title">
+						<span id="name">名稱名稱名稱名稱名稱</span>
+						<span id="price" >$25</span>
+					<h2>
+					<h4 id="dish-content">
+						<span>說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明說明</span>
+						<!-- <span id="tag">食材介紹，食材，食材介紹</span> -->
+					</h4>
+					<div id="dish-footer">
+						<a href="" class="glyphicon glyphicon-plus" aria-hidden="true"></a>
+						<span id="acount">0</span>
+						<a href="" class="glyphicon glyphicon-minus" aria-hidden="true"></a>
+					</div>
+			  </div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+		<div id="Modal-header">
+		<!-- Modal 登入 -->
+		<div class="modal fade" id="Modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">登入</h3>
+					</div>
+					<div class="modal-body">
+						<button type="button" class="btn btn-primary btn-fb btn-lg btn-block"><i class="icon-facebook-sign"></i>Facebook登入</button>
+						<div id="or"><span>或者</span></div>
+						<form class="">
+							<div class="form-group">
+							   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="輸入信箱">
+							</div>
+							<div class="form-group">
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="密碼">
+							</div>
+							<button type="button" class="btn btn-warning btn-lg btn-block">94iEat會員登入</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-gray" data-toggle="modal" data-target="#Modal-SignUp">註冊為會員</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Modal 登入End -->
+	  <!-- Modal 註冊 -->
+		<div class="modal fade" id="Modal-SignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-login">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">註冊</h3>
+					</div>
+					<div class="modal-body">
+						<button type="button" class="btn btn-primary btn-fb btn-lg btn-block"><i class="icon-facebook-sign"></i>Facebook註冊</button>
+						<div id="or"><span>或者</span></div>
+						<form class="">
+							<div class="form-group">
+							   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="輸入信箱">
+							</div>
+							<div class="form-group">
+								<!-- <p class="help-block">提示: 密碼至少輸入8個字元的英文＋數字</p> -->
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="輸入密碼 (至少輸入8個字元的英文＋數字)">
+							</div>
+							<div class="form-group">
+							   <input type="password" class="form-control" id="exampleInputPassword3" placeholder="確認密碼">
+							</div>
+							<button type="button" class="btn btn-warning btn-lg btn-block">94iEat會員註冊</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Modal 註冊End -->
+		</div><!-- Modal-header End -->
+
+</body>

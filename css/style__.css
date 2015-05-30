@@ -1,0 +1,36 @@
+*{
+	font-family: "微軟正黑體";
+	-o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+	-webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+	-moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+	transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+}
+#menu-one {
+	width: 100%;
+	height: 70px;
+	background-color: #ffc52f;
+;
+}
+#menu-second {
+	opacity: 0.9;
+	position: fixed;
+	top: 70px;
+	width: 100%;
+	background: #ffffff;
+	border-top: 1px solid #ECECEC;
+ 	border-bottom: 1px solid #ECECEC;
+ 	-moz-box-shadow:0px 1px 3px rgba(211, 211, 211, 0.5);
+	-webkit-box-shadow:0px 1px 3px rgba(211, 211, 211, 0.5);
+	box-shadow:0px 1px 3px rgba(211, 211, 211, 0.5);
+	z-index: 2;
+}
+#menu-second a{color:#666; border-left: 1px solid #ECECEC;}
+.ieat-nav{min-height:70px; border:0px solid; /*border-bottom: 1px solid #E7E7E7;*/ background-color:#FFF;}
+.ieat-nav .container-fluid{background-color:#FFF;}
+.ieat-nav > .container-fluid #logo{margin-left:0px; color:#FF6946; font-size:24px;}
+.ieat-nav .navbar-brand{height:70px; line-height:35px;}
+.ieat-nav .navbar-right > li > a{padding:25px 20px; color:#bbb;}
+.ieat-nav .navbar-right > li > a:hover{border-bottom: 2px solid #FF6946; padding-bottom:23px;}
+.ieat-nav .active#login > a{background-image:none; box-shadow:none; -webkit-box-shadow:none; background-color:#fff; border-left: 1px solid #F5F5F5; color:#bbb;}
+.ieat-nav .active#login > a:hover{background-color:#FF6946; color:#fff; padding:25px 20px; border-bottom:none;}
+

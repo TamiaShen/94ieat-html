@@ -1,0 +1,105 @@
+
+<!DOCTYPE HTML>
+<html debug="true" lang="zh_tw">
+<head><!--整個網站的開頭宣告-->
+	<meta charset="utf-8"><!--宣告字集為utf-8code-->
+	<meta name="viewport" content="width=device-width" /><!--定義給手機看-->
+	<title>94iEAt</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="js/topbar.js"> </script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).scroll(function() {
+		    var height = $(this).scrollTop();
+		    if(height  > 1) {
+		        $("#menu-one").hide();
+		       	$("#menu-second").css("top", "0px");
+		    }else{
+		    		$("#menu-one").show();
+		    		$("#menu-second").css("top", "50px");
+		    }
+		});
+	});
+	</script>
+</head>
+
+<body class="body-offcanvas">
+	<!-- NAV -->
+	<header id="menu-one" class="clearfix" style="background-color: #ffc52f;">
+	    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2">
+	        
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	    </button>
+	    <!--正常電腦畫面時跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade hidden-xs ieat-nav" role="navigation" id="js-bootstrap-offcanvas-3">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#" id="logo">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active" id="login"><a href="#">登入/註冊<span class="sr-only">(current)</span></a></li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--縮小時候跑這個-->
+	    <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade visible-xs" role="navigation" id="js-bootstrap-offcanvas-2">
+	        <div class="container-fluid" >
+	            <div class="navbar-header">
+	                <a class="navbar-brand" href="#">Brand 2</a>
+	            </div>
+	            <div>
+	              <ul class="nav navbar-nav navbar-right">
+	                <li><a>Default</a></li>
+	                <li><a>Static top</a></li>
+	                <li class="active"><a href="#">登入/註冊<span class="sr-only">(current)</span></a></li>
+	              </ul>
+	            </div>
+	        </div>
+	    </nav>
+	</header>
+	<div id="menu-second" class="navbar-heade">
+	  <ul class="nav nav-justified" style="">
+	    <li><a href="#">選擇區域</a></li>
+	    <li><a href="#">下拉選單</a></li>
+	    <li><a href="#"><i class="fa fa-shopping-cart"></i>(9) Checkout</a></li>
+	  </ul>
+	</div>
+
+
+	<!-- Container -->
+	<div class="container ieat-container" style="z-index:1;">
+		<div class="row">
+			<div class="col-md-3 user-admin-left">
+				<ul>
+					<li><a href="" class="check"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏的商家</a></li>
+					<li><a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>訂單管理</a></li>
+					<li><a href=""><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>個人設定</a></li>
+				</ul>
+			</div>
+			<div class="col-md-9 user-admin-right">
+				<div class="row block">
+					<div class="col-md-4 pic">
+						<img src="https://d2041nhezas5ej.cloudfront.net/food-pics/item_1253_9e6142c7-efc6-457b-a2bc-70c408b6316d.JPG">
+					</div>
+					<div class="col-md-8 content">
+						<div id="title">標題標題標題</div>
+						<div id="text">小字小字小字</div>
+						<div id="level"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
